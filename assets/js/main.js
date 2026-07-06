@@ -8,7 +8,7 @@
    - Page transitions (clip-path sweep)
    - Accordion, bundle selector, sticky buy, mobile nav, marquee pause
    ========================================================================== */
-import * as THREE from './three.module.js';
+import * as THREE from 'three';
 
 const $  = (s, c=document) => c.querySelector(s);
 const $$ = (s, c=document) => Array.from(c.querySelectorAll(s));

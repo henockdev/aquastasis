@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="AquaStasis 30mL vial in lab environment">
+  <!-- ============================================================ -->
+  <!-- AquaStasis HERO - Marketing Brand Animation (no person)        -->
+  <!-- Premium lab environment with the 30mL vial as the hero.        -->
+  <!-- Atmospheric depth, lens flare, bokeh, particles, COA chips.   -->
+  <!-- ============================================================ -->
+
+  <defs>
+    <!-- Deep lab environment -->
+    <radialGradient id="lab-bg" cx="50%" cy="42%" r="80%">
+      <stop offset="0%"  stop-color="#0E1A3A"/>
+      <stop offset="55%" stop-color="#06112B"/>
+      <stop offset="100%" stop-color="#020616"/>
+    </radialGradient>
+
+    <!-- Cool teal rim light from above-left -->
+    <radialGradient id="rim-cool" cx="22%" cy="18%" r="55%">
+      <stop offset="0%"  stop-color="#3FA6FF" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#1E4FB8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#06112B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Warm aqua key light from above-right -->
+    <radialGradient id="key-warm" cx="78%" cy="22%" r="60%">
+      <stop offset="0%"  stop-color="#7DF4E8" stop-opacity="0.40"/>
+      <stop offset="50%" stop-color="#0EA5A0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#06112B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Vignette for cinematic depth -->
+    <radialGradient id="vignette" cx="50%" cy="55%" r="75%">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.65"/>
+    </radialGradient>
+
+    <!-- Vial glass: physical refraction -->
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="20%" stop-color="#CFE3FF" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#7FB6FF" stop-opacity="0.18"/>
+      <stop offset="80%" stop-color="#CFE3FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="fluid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#A6FFF1" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#2BE9D4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0EA5A0" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#5A95FF"/>
+      <stop offset="55%" stop-color="#2461FF"/>
+      <stop offset="100%" stop-color="#0A3AB0"/>
+    </linearGradient>
+    <linearGradient id="cap-shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lbl-paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EEF3FB"/>
+    </linearGradient>
+    <linearGradient id="lbl-band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#5A95FF"/>
+      <stop offset="100%" stop-color="#123E9E"/>
+    </linearGradient>
+
+    <!-- Glow halos -->
+    <radialGradient id="halo-aqua" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#2BE9D4" stop-opacity="0.60"/>
+      <stop offset="55%" stop-color="#2BE9D4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#2BE9D4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#3F6BFF" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#3F6BFF" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#3F6BFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Lens flare -->
+    <radialGradient id="flare" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#FFE6A6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFE6A6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Lab background blur bokeh -->
+    <radialGradient id="bokeh-a" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#7DF4E8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7DF4E8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bokeh-b" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#3F6BFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3F6BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bokeh-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#F0F4FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#F0F4FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bokeh-warm" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#FFD27A" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFD27A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Surface (where the vial sits) -->
+    <linearGradient id="surface" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0A1638"/>
+      <stop offset="100%" stop-color="#020616"/>
+    </linearGradient>
+    <radialGradient id="surface-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#2BE9D4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#2BE9D4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Clip path for vial fluid -->
+    <clipPath id="vial-clip">
+      <path d="M -52 95 Q -60 290 0 290 Q 60 290 52 95 Z"/>
+    </clipPath>
+
+    <!-- Filters -->
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="softer" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="vial-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="14"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.7"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- =================== LAYER 1: Lab background =================== -->
+  <rect width="1200" height="800" fill="url(#lab-bg)"/>
+  <rect width="1200" height="800" fill="url(#rim-cool)"/>
+  <rect width="1200" height="800" fill="url(#key-warm)"/>
+
+  <!-- Distant lab equipment silhouettes (blurred) -->
+  <g opacity="0.55" filter="url(#soft)">
+    <!-- fume hood silhouette -->
+    <path d="M 50 480 L 1150 480 L 1180 800 L 20 800 Z" fill="#04102A"/>
+    <!-- equipment racks -->
+    <rect x="80"  y="350" width="220" height="130" rx="10" fill="#0A1A3A"/>
+    <rect x="900" y="320" width="240" height="160" rx="10" fill="#0A1A3A"/>
+    <rect x="100" y="370" width="60"  height="100" rx="6" fill="#1B2C58"/>
+    <rect x="180" y="370" width="60"  height="100" rx="6" fill="#1B2C58"/>
+    <rect x="260" y="370" width="60"  height="100" rx="6" fill="#1B2C58"/>
+    <rect x="920" y="350" width="80"  height="120" rx="6" fill="#1B2C58"/>
+    <rect x="1020" y="350" width="80" height="120" rx="6" fill="#1B2C58"/>
+    <!-- shelves glow -->
+    <ellipse cx="200" cy="370" rx="120" ry="22" fill="#2BE9D4" opacity="0.20"/>
+    <ellipse cx="1000" cy="350" rx="140" ry="22" fill="#3F6BFF" opacity="0.20"/>
+    <!-- Fume hood glass panels (vertical lines) -->
+    <line x1="350" y1="450" x2="350" y2="780" stroke="#2BE9D4" stroke-width="1" opacity="0.25"/>
+    <line x1="450" y1="450" x2="450" y2="780" stroke="#2BE9D4" stroke-width="1" opacity="0.18"/>
+    <line x1="750" y1="450" x2="750" y2="780" stroke="#2BE9D4" stroke-width="1" opacity="0.25"/>
+    <line x1="850" y1="450" x2="850" y2="780" stroke="#2BE9D4" stroke-width="1" opacity="0.18"/>
+  </g>
+
+  <!-- Bokeh circles in background (depth of field) -->
+  <g opacity="0.7">
+    <circle cx="180"  cy="160" r="55" fill="url(#bokeh-a)"/>
+    <circle cx="1020" cy="120" r="70" fill="url(#bokeh-b)"/>
+    <circle cx="320"  cy="240" r="40" fill="url(#bokeh-c)"/>
+    <circle cx="900"  cy="260" r="48" fill="url(#bokeh-c)"/>
+    <circle cx="120"  cy="600" r="80" fill="url(#bokeh-b)" opacity="0.5"/>
+    <circle cx="1080" cy="640" r="65" fill="url(#bokeh-a)" opacity="0.5"/>
+    <circle cx="600"  cy="120" r="35" fill="url(#bokeh-c)"/>
+    <circle cx="780"  cy="80"  r="42" fill="url(#bokeh-c)"/>
+    <circle cx="450"  cy="700" r="55" fill="url(#bokeh-warm)" opacity="0.4"/>
+    <circle cx="980"  cy="720" r="40" fill="url(#bokeh-warm)" opacity="0.3"/>
+  </g>
+
+  <!-- Soft glow behind the vial -->
+  <ellipse cx="600" cy="430" rx="380" ry="360" fill="url(#halo-aqua)">
+    <animate attributeName="rx" values="380;420;380" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="360;400;360" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="600" cy="430" rx="280" ry="280" fill="url(#halo-blue)">
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- =================== LAYER 2: Side vials (background product line) =================== -->
+  <!-- Two softly out-of-focus vials flanking the hero -->
+  <g opacity="0.55" filter="url(#softer)" transform="translate(280 460)">
+    <rect x="-22" y="-110" width="44" height="22" rx="4" fill="url(#cap)"/>
+    <path d="M-44 -78 Q-50 110 0 110 Q50 110 44 -78 Z" fill="url(#glass)" stroke="rgba(255,255,255,.3)" stroke-width="0.5"/>
+    <rect x="-44" y="-50" width="88" height="160" fill="url(#fluid)" clip-path="url(#vial-clip-bg-l)"/>
+    <ellipse cx="0" cy="-50" rx="44" ry="6" fill="#7DF4E8" opacity="0.7"/>
+    <rect x="-22" y="-30" width="44" height="80" rx="2" fill="#fff"/>
+    <rect x="-22" y="-30" width="44" height="14" fill="url(#lbl-band)"/>
+    <text x="0" y="-20" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#fff" font-weight="800">aqua<tspan fill="#7DF4E8">stasis</tspan></text>
+    <path d="M-32 -50 Q-38 30 -30 100" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity=".4"/>
+  </g>
+  <g opacity="0.55" filter="url(#softer)" transform="translate(920 460)">
+    <rect x="-22" y="-110" width="44" height="22" rx="4" fill="url(#cap)"/>
+    <path d="M-44 -78 Q-50 110 0 110 Q50 110 44 -78 Z" fill="url(#glass)" stroke="rgba(255,255,255,.3)" stroke-width="0.5"/>
+    <rect x="-44" y="-50" width="88" height="160" fill="url(#fluid)" clip-path="url(#vial-clip-bg-r)"/>
+    <ellipse cx="0" cy="-50" rx="44" ry="6" fill="#7DF4E8" opacity="0.7"/>
+    <rect x="-22" y="-30" width="44" height="80" rx="2" fill="#fff"/>
+    <rect x="-22" y="-30" width="44" height="14" fill="url(#lbl-band)"/>
+    <text x="0" y="-20" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#fff" font-weight="800">aqua<tspan fill="#7DF4E8">stasis</tspan></text>
+    <path d="M-32 -50 Q-38 30 -30 100" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity=".4"/>
+  </g>
+
+  <!-- =================== LAYER 3: Surface / platform under hero vial =================== -->
+  <!-- Floor reflection disc -->
+  <ellipse cx="600" cy="640" rx="180" ry="22" fill="url(#surface-glow)"/>
+  <ellipse cx="600" cy="640" rx="160" ry="10" fill="#2BE9D4" opacity="0.35"/>
+  <ellipse cx="600" cy="640" rx="100" ry="6" fill="#7DF4E8" opacity="0.7"/>
+
+  <!-- =================== LAYER 4: The hero 30mL VIAL =================== -->
+  <g id="vial" transform="translate(600 430)" filter="url(#vial-shadow)">
+    <!-- Subtle breathing -->
+    <animateTransform attributeName="transform" type="translate"
+      values="600 430; 600 426; 600 430" dur="5s" repeatCount="indefinite" additive="sum"/>
+
+    <!-- Cap (blue, metallic) -->
+    <g>
+      <rect x="-46" y="-145" width="92" height="42" rx="8" fill="url(#cap)"/>
+      <rect x="-46" y="-145" width="92" height="6"  rx="3" fill="#7AB0FF" opacity="0.7"/>
+      <rect x="-46" y="-103" width="92" height="6"  fill="#0A3AB0" opacity="0.8"/>
+      <ellipse cx="0" cy="-145" rx="46" ry="6" fill="#5A95FF"/>
+      <ellipse cx="0" cy="-145" rx="46" ry="6" fill="url(#cap-shine)" opacity="0.9"/>
+      <!-- Cap top groove -->
+      <ellipse cx="0" cy="-140" rx="38" ry="4" fill="none" stroke="#0A3AB0" stroke-width="1" opacity="0.6"/>
+      <!-- Cap ring (teal) -->
+      <rect x="-26" y="-110" width="52" height="14" rx="3" fill="#0EA5A0"/>
+      <rect x="-26" y="-110" width="52" height="3"  fill="#2BE9D4"/>
+    </g>
+
+    <!-- Neck + crimp -->
+    <path d="M -22 -96 L 22 -96 L 18 -78 L -18 -78 Z" fill="#E5ECF7"/>
+    <path d="M -22 -96 L 22 -96 L 22 -94 L -22 -94 Z" fill="#A8B7D0"/>
+
+    <!-- Glass body -->
+    <path d="M -50 -78
+             Q -56 0 0 0
+             Q 56 0 50 -78 Z"
+          fill="url(#glass)" stroke="rgba(255,255,255,0.4)" stroke-width="0.5"/>
+
+    <!-- Fluid inside -->
+    <g clip-path="url(#vial-clip)">
+      <rect x="-55" y="-50" width="110" height="350" fill="url(#fluid)"/>
+      <!-- Fluid surface ripple -->
+      <ellipse cx="0" cy="-50" rx="52" ry="6" fill="#A6FFF1" opacity="0.85"/>
+      <ellipse cx="0" cy="-50" rx="45" ry="4" fill="#FFFFFF" opacity="0.5"/>
+      <ellipse cx="0" cy="-50" rx="35" ry="2" fill="#FFFFFF" opacity="0.6"/>
+
+      <!-- Bubbles rising -->
+      <circle cx="-15" cy="80"  r="2.5" fill="#FFFFFF" opacity="0.7">
+        <animate attributeName="cy" values="80;-50" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="10"  cy="120" r="2"   fill="#FFFFFF" opacity="0.6">
+        <animate attributeName="cy" values="120;-50" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.6;0" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-5"  cy="180" r="1.5" fill="#FFFFFF" opacity="0.5">
+        <animate attributeName="cy" values="180;-50" dur="4s" begin="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0" dur="4s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="20"  cy="60"  r="1.8" fill="#FFFFFF" opacity="0.7">
+        <animate attributeName="cy" values="60;-50" dur="2.8s" begin="0.3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0" dur="2.8s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-25" cy="220" r="1.2" fill="#FFFFFF" opacity="0.5">
+        <animate attributeName="cy" values="220;-50" dur="4.5s" begin="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0" dur="4.5s" begin="1.8s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Label (Parrox-style) -->
+      <rect x="-44" y="-25" width="88" height="180" rx="3" fill="url(#lbl-paper)"/>
+      <rect x="-44" y="-25" width="88" height="22"  rx="3" fill="url(#lbl-band)"/>
+      <text x="0" y="-10" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#FFFFFF" font-weight="800" letter-spacing="2">aqua<tspan fill="#7DF4E8">stasis</tspan></text>
+
+      <text x="0" y="14" text-anchor="middle" font-family="monospace" font-size="6" fill="#54637C" letter-spacing="1.5">BACTERIOSTATIC WATER</text>
+      <text x="0" y="26" text-anchor="middle" font-family="monospace" font-size="6" fill="#54637C" letter-spacing="1.5">30 mL · 0.9% BENZYL</text>
+
+      <line x1="-38" y1="34" x2="38" y2="34" stroke="#E3E8F1" stroke-width="0.5"/>
+
+      <text x="-38" y="48" font-family="monospace" font-size="5" fill="#8C9AB2">LOT</text>
+      <text x="38"  y="48" text-anchor="end" font-family="monospace" font-size="5" fill="#0B1524">AQ-2026-0712</text>
+      <text x="-38" y="60" font-family="monospace" font-size="5" fill="#8C9AB2">MFG</text>
+      <text x="38"  y="60" text-anchor="end" font-family="monospace" font-size="5" fill="#0B1524">2026·07·12</text>
+      <text x="-38" y="72" font-family="monospace" font-size="5" fill="#8C9AB2">EXP</text>
+      <text x="38"  y="72" text-anchor="end" font-family="monospace" font-size="5" fill="#0B1524">2028·07·12</text>
+      <text x="-38" y="84" font-family="monospace" font-size="5" fill="#8C9AB2">STERILE</text>
+      <text x="38"  y="84" text-anchor="end" font-family="monospace" font-size="5" fill="#17B26A" font-weight="700">✓ PASS</text>
+      <text x="-38" y="96" font-family="monospace" font-size="5" fill="#8C9AB2">pH</text>
+      <text x="38"  y="96" text-anchor="end" font-family="monospace" font-size="5" fill="#0B1524">5.8</text>
+
+      <!-- GMP seal -->
+      <g transform="translate(28, 124) rotate(-10)">
+        <circle r="14" fill="none" stroke="#17B26A" stroke-width="1.5"/>
+        <text text-anchor="middle" y="3" font-family="monospace" font-size="5" fill="#17B26A" font-weight="700">GMP</text>
+      </g>
+
+      <!-- Barcode -->
+      <g fill="#0B1524">
+        <rect x="-40" y="138" width="1" height="10"/><rect x="-37" y="138" width="2" height="10"/>
+        <rect x="-33" y="138" width="1" height="10"/><rect x="-30" y="138" width="3" height="10"/>
+        <rect x="-25" y="138" width="1" height="10"/><rect x="-22" y="138" width="2" height="10"/>
+        <rect x="-18" y="138" width="1" height="10"/><rect x="-15" y="138" width="2" height="10"/>
+        <rect x="-11" y="138" width="3" height="10"/><rect x="-6"  y="138" width="1" height="10"/>
+        <rect x="-3"  y="138" width="2" height="10"/><rect x="1"   y="138" width="1" height="10"/>
+        <rect x="4"   y="138" width="2" height="10"/><rect x="8"   y="138" width="3" height="10"/>
+        <rect x="13"  y="138" width="1" height="10"/><rect x="16"  y="138" width="2" height="10"/>
+        <rect x="20"  y="138" width="1" height="10"/><rect x="23"  y="138" width="2" height="10"/>
+        <rect x="27"  y="138" width="3" height="10"/><rect x="32"  y="138" width="1" height="10"/>
+        <rect x="35"  y="138" width="2" height="10"/><rect x="39"  y="138" width="1" height="10"/>
+      </g>
+
+      <!-- Glass shine highlight on label -->
+      <rect x="-30" y="-25" width="14" height="180" fill="#FFFFFF" opacity="0.18"/>
+    </g>
+
+    <!-- Glass shine (outer left) -->
+    <path d="M -38 -70 Q -44 0 -34 80" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.55"/>
+    <!-- Glass shine (right edge) -->
+    <path d="M 38 -70 Q 44 0 34 80" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.35"/>
+    <!-- Cap shine -->
+    <rect x="-30" y="-145" width="60" height="6" fill="url(#cap-shine)"/>
+  </g>
+
+  <!-- =================== LAYER 5: Lens flare & particles =================== -->
+  <!-- Main lens flare upper-right -->
+  <g transform="translate(900 180)" opacity="0.9">
+    <circle r="35" fill="url(#flare)"/>
+    <circle r="12" fill="#FFFFFF" opacity="0.95"/>
+    <circle r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Secondary flares along flare line -->
+  <g transform="translate(700 280)" opacity="0.5">
+    <circle r="14" fill="url(#flare)"/>
+  </g>
+  <g transform="translate(500 380)" opacity="0.35">
+    <circle r="8" fill="url(#flare)"/>
+  </g>
+  <g transform="translate(320 480)" opacity="0.55">
+    <circle r="20" fill="url(#flare)"/>
+  </g>
+
+  <!-- Floating particles / bokeh -->
+  <g id="particles">
+    <circle cx="150" cy="200" r="3" fill="#7DF4E8" opacity="0.8">
+      <animate attributeName="cy" values="200;180;200" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="380" r="2.5" fill="#FFFFFF" opacity="0.9">
+      <animate attributeName="cy" values="380;360;380" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="500" r="2" fill="#7DF4E8" opacity="0.7">
+      <animate attributeName="cy" values="500;480;500" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="200" r="3.5" fill="#3F6BFF" opacity="0.8">
+      <animate attributeName="cy" values="200;180;200" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="120" r="2" fill="#FFFFFF" opacity="0.9">
+      <animate attributeName="cy" values="120;100;120" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="850" cy="600" r="2.5" fill="#7DF4E8" opacity="0.7">
+      <animate attributeName="cy" values="600;580;600" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="650" r="3" fill="#FFFFFF" opacity="0.8">
+      <animate attributeName="cy" values="650;630;650" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="350" r="2" fill="#3F6BFF" opacity="0.7">
+      <animate attributeName="cy" values="350;330;350" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="950" cy="500" r="2" fill="#FFFFFF" opacity="0.85">
+      <animate attributeName="cy" values="500;480;500" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="80"  r="1.8" fill="#7DF4E8" opacity="0.8">
+      <animate attributeName="cy" values="80;65;80" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="700" r="2.5" fill="#FFFFFF" opacity="0.7">
+      <animate attributeName="cy" values="700;680;700" dur="5.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="700" r="2" fill="#3F6BFF" opacity="0.7">
+      <animate attributeName="cy" values="700;680;700" dur="4.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Sparkles / cross-stars -->
+  <g fill="#FFFFFF">
+    <g transform="translate(820 220)" opacity="0.95">
+      <path d="M 0 -10 L 1 -1 L 10 0 L 1 1 L 0 10 L -1 1 L -10 0 L -1 -1 Z"/>
+    </g>
+    <g transform="translate(380 320)" opacity="0.85">
+      <path d="M 0 -7 L 1 -1 L 7 0 L 1 1 L 0 7 L -1 1 L -7 0 L -1 -1 Z"/>
+    </g>
+    <g transform="translate(960 440)" opacity="0.9">
+      <path d="M 0 -8 L 1 -1 L 8 0 L 1 1 L 0 8 L -1 1 L -8 0 L -1 -1 Z"/>
+    </g>
+    <g transform="translate(250 280)" opacity="0.8">
+      <path d="M 0 -6 L 1 -1 L 6 0 L 1 1 L 0 6 L -1 1 L -6 0 L -1 -1 Z"/>
+    </g>
+  </g>
+
+  <!-- =================== LAYER 6: Marketing overlays =================== -->
+  <!-- COA floating chip top-left -->
+  <g transform="translate(120 200)" opacity="0.95">
+    <rect x="-90" y="-30" width="180" height="60" rx="10" fill="rgba(7,13,31,0.78)" stroke="rgba(43,233,212,0.5)" stroke-width="1"/>
+    <circle cx="-72" cy="0" r="6" fill="#2BE9D4">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="-58" y="-8" font-family="monospace" font-size="10" fill="#FFFFFF" font-weight="700">LIVE · COA</text>
+    <text x="-58" y="8"  font-family="monospace" font-size="8"  fill="#7DF4E8">AQ-2026-0712</text>
+    <text x="-58" y="22" font-family="monospace" font-size="7"  fill="rgba(255,255,255,0.7)">STERILE · PASS</text>
+  </g>
+
+  <!-- USP-Grade floating chip bottom-right -->
+  <g transform="translate(1080 560)" opacity="0.95">
+    <rect x="-90" y="-25" width="180" height="50" rx="10" fill="rgba(7,13,31,0.78)" stroke="rgba(36,97,255,0.5)" stroke-width="1"/>
+    <circle cx="-72" cy="0" r="6" fill="#2461FF"/>
+    <text x="-58" y="-5" font-family="monospace" font-size="10" fill="#FFFFFF" font-weight="700">USP-GRADE</text>
+    <text x="-58" y="11" font-family="monospace" font-size="8"  fill="#7AB0FF">BorSi Glass · 30 mL</text>
+  </g>
+
+  <!-- Vignette -->
+  <rect width="1200" height="800" fill="url(#vignette)"/>
+</svg>
